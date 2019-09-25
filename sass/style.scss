@@ -1,0 +1,24 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font.Scss';
+@import 'libs/slick.Scss';
+@import 'libs/slick-theme.Scss';
+@import 'libs/animate';
+
+@import 'base/variables';
+@import 'base/animations';
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    
+}
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/countries';
+@import 'blocks/header';
+@import 'blocks/button';
+

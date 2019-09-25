@@ -1,0 +1,97 @@
+.countries{
+    min-height: 87px;
+    position: relative;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 17px;
+    }
+    &__flag{
+        width: 28px;
+        height: 21px;
+    }
+    &__descr{
+        margin-left: 10px;
+    }
+    &__name{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+    }
+    &__phone{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    &__email{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 1140px){
+    .countries{
+        .container{
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .countries{
+        .hamburger{
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            span{
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #000;
+                margin-bottom: 2px;
+                transition: 0.6s all;
+            }
+            &_active{
+                span{
+                    margin-bottom: -2px;
+                    &:nth-child(1){
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+        &__items{
+            position: fixed;           
+            flex-direction: column;          
+            justify-content: center;
+            top: 0;
+            left: -100%;
+            width: 42%;
+            height: 100vh;
+            padding: 20px 15px;
+            background: rgba(255, 255, 255, 0.8);           
+            transition: 0.6s all;
+            z-index: 1;
+            &_active{
+                left: 0%;
+            }
+        }
+    }
+}
