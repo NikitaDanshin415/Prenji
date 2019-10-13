@@ -41,6 +41,9 @@
         .container{
             justify-content: space-around;
         }
+        &__items{
+            padding: 0 20px;
+        }
     }
 }
 
