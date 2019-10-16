@@ -1,6 +1,6 @@
 .promo{
     min-height: 700px;
-    background: url('../../img/main.jpg') center center/cover no-repeat;
+    background: url('../img/main.jpg') center center/cover no-repeat;
     padding-top:39px;
     &__menu{
         display: flex;
@@ -24,6 +24,10 @@
                     line-height: 26px;
                     text-transform: uppercase;
                     color:#fff;
+                    &:hover{
+                        color:#00c2f0;
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -37,9 +41,9 @@
     }
     &__title{
         color: #ffffff;
-        font-size: 42px;
-        font-weight: 700;
+        font-size: 41px;
         line-height: 48px;
+        font-weight: 700;
     }
     &__text{
         color: #ffffff;
@@ -48,7 +52,7 @@
         line-height: 30px;   
         margin-top: 27px;    
         span{
-            font-weight: 600;       
+            font-weight: 500;       
         }
     }
     &__phone{

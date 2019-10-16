@@ -1,5 +1,4 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/font.Scss';
 @import 'libs/slick.Scss';
 @import 'libs/slick-theme.Scss';
 @import 'libs/animate';
@@ -7,8 +6,7 @@
 @import 'base/variables';
 @import 'base/animations';
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     position: relative;
@@ -22,5 +20,7 @@
 @import 'blocks/button';
 @import 'blocks/carousel';
 @import 'blocks/solution';
+@import 'blocks/presentation';
+@import 'blocks/titles';
 
 
